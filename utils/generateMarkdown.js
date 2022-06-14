@@ -45,46 +45,46 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
   
-  ${badge}
+${badge}
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
-  1. [Description](#description)
-  2. [Installation](#installation)
-  3. [Usage](#usage)
-  4. [License](#license)
-  5. [Contributing](#contributing)
-  6. [Tests](#tests)
-  7. [Questions](#questions)
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  ${data.installation}
+${data.installation}
 
-  ## Usage
+## Usage
 
-  ${data.usage}
+${data.usage}
 
-  ## License
+## License
 
-  ${licenseSection}
+${licenseSection}
 
-  ## Contributing
+## Contributing
 
-  ${data.contributing}
+${data.contributing}
 
-  ## Tests
+## Tests
 
-  ${data.tests}
+${data.tests}
 
-  ## Questions
+## Questions
 
-  My GitHub username is: [${data.username}](https://github.com/${data.username})
+My GitHub username is: [${data.username}](https://github.com/${data.username})
 
-  If you have additional questions, you can reach me at my e-mail any time. ${data.email}
+If you have additional questions, you can reach me at my e-mail any time. ${data.email}
 `;
 }
 

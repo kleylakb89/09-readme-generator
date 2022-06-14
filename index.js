@@ -7,30 +7,34 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 
-// These questions gather data to fill out the generated README
+// These questions gather data to fill out the generated README. If nothing is entered, an error message will display.
 const questions = [
     {
         type: 'input',
         message: 'What is your project title?',
-        name: 'title'
+        name: 'title',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What is your project description?',
-        name: 'description'
+        name: 'description',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What are your installation instructions?',
-        name: 'installation'
+        name: 'installation',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What is the usage information?',
-        name: 'usage'
+        name: 'usage',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
-        type: 'list',
+        type: 'rawlist',
         message: 'What license would you like to choose?',
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla', 'Apache', 'MIT', 'Boost', 'The Unlicense', 'No License'],
         name: 'license'
@@ -38,22 +42,26 @@ const questions = [
     {
         type: 'input',
         message: 'What are the contribution guidelines?',
-        name: 'contributing'
+        name: 'contributing',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What are your test instructions?',
-        name: 'tests'
+        name: 'tests',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What is your GitHub username?',
-        name: 'username'
+        name: 'username',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     },
     {
         type: 'input',
         message: 'What is your e-mail?',
-        name: 'email'
+        name: 'email',
+        validate: answer => (answer.length === 0) ? 'Please input something' : true
     }
 ];
 
