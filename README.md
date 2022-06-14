@@ -19,6 +19,8 @@ Features include:
 - Links to the user's GitHub and email address.
 - A Table of Contents that navigates to the corresponding sections of the README.
 
+NOTE: The generated README can be found in the output directory.
+
 ## Usage
 
 Upon entering 'node index.js', the user will be prompted to answer questions about their project. Blank answers will not be accepted. A list of license options can be navigated through to select one of the licenses or no license. If a license is chosen, a badge and link to the license will be added to the README, otherwise it will not be included. After user answers all the questions, a README.md will be created in the output directory with their information included.
@@ -32,4 +34,4 @@ An example of the CLI after running the program.
 
 - [Repository](https://github.com/kleylakb89/09-readme-generator)
 - [Video Walkthrough](https://drive.google.com/file/d/1NKofr6N6cN_Ea6MPO8cHxab6Yo1O6lr2/view)
-- [Generated README]()
+- [Generated README](https://raw.githubusercontent.com/kleylakb89/09-readme-generator/main/output/README.md)
