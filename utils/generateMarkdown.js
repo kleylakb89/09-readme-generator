@@ -1,14 +1,16 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla', 'Apache', 'MIT', 'Boost', 'The Unlicense', 'No License']
-// https://img.shields.io/badge/license-${license}-blue
+
+// takes in the license name and converts to a badge URL, if there is no license selected, returns an empty string
 function renderLicenseBadge(license) {
   const address = license.replace(' ', '%20');
-  return (license === 'No License' ? '' : `https://img.shields.io/badge/License-${address}-blue`);
+  return (license === 'No License' ? '' : `![License](https://img.shields.io/badge/License-${address}-blue)`);
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+
+// Created an object of license links with the keys of the license name. Takes in the license name chosen and returns the link for that license.
 function renderLicenseLink(license) {
   const licenseLinks = {
     'GNU AGPLv3': 'https://opensource.org/licenses/AGPL-3.0',
@@ -26,6 +28,8 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+
+// utilizes the renderLicenseLink function to return a template literal with the license name and link. If no license is chosen, returns an empty string.
 function renderLicenseSection(license) {
   const links = renderLicenseLink(license);
   
@@ -33,13 +37,15 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+
+// takes in the inquirer data and returns a template literal utilizing that data. This will become the README file.
 function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
   const badge = renderLicenseBadge(data.license);
 
   return `# ${data.title}
   
-  ![License](${badge})
+  ${badge}
 
   ## Description
 
