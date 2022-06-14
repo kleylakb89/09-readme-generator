@@ -1,10 +1,10 @@
 # Test Project
   
-![License](https://img.shields.io/badge/License-The%20Unlicense-blue)
+![License](https://img.shields.io/badge/License-GNU%20AGPLv3-blue)
 
 ## Description
 
-testing my project
+Testing my README Generator
 
 ## Table of Contents
 1. [Description](#description)
@@ -17,23 +17,23 @@ testing my project
 
 ## Installation
 
-Try it out
+Use CLI to run program
 
 ## Usage
 
-Click around
+Follow the prompts
 
 ## License
 
-This application is covered under the The Unlicense license. For more information, please see: [The Unlicense](https://unlicense.org/)
+This application is covered under the GNU AGPLv3 license. For more information, please see: [GNU AGPLv3](https://opensource.org/licenses/AGPL-3.0)
 
 ## Contributing
 
-contact me
+Please contact me if you would like to contribute.
 
 ## Tests
 
-try it out
+Click around and try it out.
 
 ## Questions
 
