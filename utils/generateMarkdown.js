@@ -3,7 +3,8 @@
 // ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla', 'Apache', 'MIT', 'Boost', 'The Unlicense', 'No License']
 // https://img.shields.io/badge/license-${license}-blue
 function renderLicenseBadge(license) {
-  return (license === 'No License' ? '' : `https://img.shields.io/badge/License-${license}-blue`);
+  const address = license.replace(' ', '%20');
+  return (license === 'No License' ? '' : `https://img.shields.io/badge/License-${address}-blue`);
 }
 
 // TODO: Create a function that returns the license link
@@ -17,7 +18,6 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const badge = renderLicenseBadge(data.license);
-  console.log(badge);
 
   return `# ${data.title}
 
